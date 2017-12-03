@@ -1,0 +1,9 @@
+{
+	"Lang": "es",
+	"title": "Título de mi Template Pug",
+	"description": "Descripción de mi Template Pug",
+	"mobileColor": "#000000",
+	"favicon": "./img/favicon.ico",
+	"logoPNG": "./img/logo.png",
+	"logoSVG": "./img/logo.svg"
+}
