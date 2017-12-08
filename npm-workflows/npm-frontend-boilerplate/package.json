@@ -37,7 +37,13 @@
     "sass": "node-sass -w -o ./src/css ./src/scss",
     "babel": "babel -w ./src/es6/ -d ./src/js/",
     "pug": "pug -w -P -p ./src/pug/partials/ -p ./src/pug/layouts/ -O ./src/pug/options.json ./src/pug/*.pug -o ./src/",
-    "watch:metalang": "parallelshell \"npm run sass\" \"npm run babel\" \"npm run pug\""
+    "watch:metalang": "parallelshell \"npm run sass\" \"npm run babel\" \"npm run pug\"",
+    "dev:server": "browser-sync start --server --directory --startPath ./src --serverStatic ./src --files ./src --reload-delay=300 --reload-debounce=500",
+    "dev:proxyserver": "browser-sync start --proxy localhost --directory --startPath ./ruta/desde/htdocs --serverStatic ./src --files ./src --reload-delay=300 --reload-debounce=500",
+    "watch:devserver": "parallelshell \"npm run dev:server\" \"npm run watch:metalang\"",
+    "watch:proxyserver": "parallelshell \"npm run dev:proxyserver\" \"npm run watch:metalang\"",
+    "clean": "rimraf ./dist/*",
+    "build:folders": "mkdir ./dist/css ./dist/js ./dist/img"
   },
   "author": "K. Aixegorri",
   "license": "MIT"

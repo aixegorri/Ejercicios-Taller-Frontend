@@ -20,7 +20,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 		_createClass(Perro, [{
 			key: 'ladrar',
 			value: function ladrar() {
-				alert('${this.nombre} dice guau guau!!!');
+				alert(this.nombre + ' dice guau guau!!!');
 			}
 		}]);
 
@@ -28,6 +28,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 	}();
 
 	var kenai = new Perro('Kenai', 'Firefox');
+	// kenai.ladrar()
 
 	console.log(html, head, body);
 })(document, window, navigator);

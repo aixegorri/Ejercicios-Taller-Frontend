@@ -10,11 +10,12 @@
 		}
 
 		ladrar() {
-			alert ('${this.nombre} dice guau guau!!!');
+			alert (`${this.nombre} dice guau guau!!!`);
 		}
 	}
 
 	let kenai = new Perro('Kenai', 'Firefox')
+	// kenai.ladrar()
 
 	console.log(html, head, body)
 })(document, window, navigator);
