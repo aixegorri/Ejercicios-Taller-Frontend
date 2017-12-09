@@ -1,0 +1,14 @@
+/* El título de mi sitio - http://midominio.com */
+
+/* TEAM */
+	Diseño y Programación Web: K. Aixegorri
+	Contact: aixegorri [at] gmail.com
+	Twitter: @aixegorri
+	From: Bilbo, EH
+
+/* SITE */
+	Last update: 2017/12/3
+	Language: Español
+	Standars: HTML5, CSS3, JavaScript, PHP, MySQL
+	Components: Responsive Design, Node.js, NPM
+	Software: Sublime Text, Chrome, Photoshop
