@@ -51,7 +51,8 @@
     "minify": "node buildify",
     "useref": "useref \"./src/**/*.+(html|php)\" ./dist",
     "min:html": "html-minifier --html5 --remove-comments --collapse-whitespace --input-dir ./dist/ --output-dir ./dist/",
-    "statics": "node statics"
+    "statics": "node statics",
+    "imagemin": "imagemin \"./src/img/*.+(jpg|png)\" -o ./dist/img/ -p=pngquant -p=jpeg-recompress"
   },
   "author": "K. Aixegorri",
   "license": "MIT"
